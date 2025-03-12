@@ -108,7 +108,7 @@ extern "C" fn handle() {
                     msg::send_delayed(
                         exec::program_id(),
                         SessionAction::CheckGameStatus { user: *user },
-                        1000000000000000000,
+                        0,
                         200,
                     )
                     .expect("Failed to send delayed message");
